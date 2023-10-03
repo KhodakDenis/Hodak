@@ -1,4 +1,4 @@
-/* Стилі для body та заголовків */
+/* Основні стилі для body та заголовків */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -27,10 +27,11 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 500px;
-    max-height: 600px;
+    width: 300px;
+    max-height: 400px;
     overflow-y: auto; /* Додано прокрутку, якщо контент в формі виходить за межі */
     border: 1px solid #ccc;
+    margin: 20px;
 }
 
 .form-group {
@@ -43,33 +44,34 @@ label {
     font-weight: bold;
 }
 
+/* Закруглені поля вводу */
 input[type="text"],
 input[type="email"],
 input[type="password"],
 select,
-input[type="date"] {
+input[type="date"],
+input[type="submit"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px; /* Закруглені кути */
 }
 
 select {
     height: 35px;
 }
 
+/* Оранжева кнопка зеленого кольору при наведенні */
 input[type="submit"] {
-    background-color: #333;
+    background-color: #FFA500; /* Оранжевий колір */
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 100%;
 }
 
 input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #008000; /* Зелений колір при наведенні */
 }
-
