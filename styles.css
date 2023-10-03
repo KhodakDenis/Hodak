@@ -1,15 +1,20 @@
-/* Основні стилі для body та заголовків */
+/* Стилі для body та заголовків */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    text-align: center;
 }
 
 h1 {
@@ -17,8 +22,16 @@ h1 {
 }
 
 /* Стилі для форми */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -50,9 +63,9 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 input[type="submit"]:hover {
     background-color: #555;
 }
-
