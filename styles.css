@@ -1,3 +1,27 @@
+/* Стилі для заголовка та навігаційного меню */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px; /* Додано відступи навколо заголовка */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Додано відступи між пунктами меню */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Основні стилі для body та заголовків */
 body {
     font-family: Arial, sans-serif;
