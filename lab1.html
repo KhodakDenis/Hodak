@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реєстрація</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Підключення CSS-стилів -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="lab_list.html">Список лабораторних</a></li>
-            </ul>
-        </nav>
-    </header> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="lab_list.html">Список лабораторних</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section>
-        <h1>Форма реєстрації</h1>
-        <form action="https://webhook.site/584603ae-bad8-476b-bfd9-344998e6ee61" method="post">
-            <label for="firstName">Ім'я:</label>
-            <input type="text" id="firstName" name="firstName" required><br>
+    <section>
+        <h1>Форма реєстрації</h1>
+        <form action="https://webhook.site/584603ae-bad8-476b-bfd9-344998e6ee61" method="post">
+            <div class="form-group">
+                <label for="firstName">Ім'я:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
 
-            <label for="lastName">Прізвище:</label>
-            <input type="text" id="lastName" name="lastName" required><br>
+            <div class="form-group">
+                <label for="lastName">Прізвище:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
 
-            <label for="email">Електронна пошта:</label>
-            <input type="email" id="email" name="email" required><br>
+            <div class="form-group">
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" required><br>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
 
-            <label for="confirmPassword">Підтвердження паролю:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+            <div class="form-group">
+                <label for="confirmPassword">Підтвердження паролю:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
 
-            <label for="birthdate">Дата народження:</label>
-            <input type="date" id="birthdate" name="birthdate"><br>
+            <div class="form-group">
+                <label for="birthdate">Дата народження:</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
 
-            <label for="gender">Стать:</label>
-            <select id="gender" name="gender">
-                <option value="male">Чоловік</option>
-                <option value="female">Жінка</option>
-                <option value="other">Інше</option>
-            </select><br>
+            <div class="form-group">
+                <label for="gender">Стать:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Чоловік</option>
+                    <option value="female">Жінка</option>
+                    <option value="other">Інше</option>
+                </select>
+            </div>
 
-            <input type="submit" value="Зареєструватися">
-        </form>
-    </section>
+            <div class="form-group">
+                <input type="submit" value="Зареєструватися">
+            </div>
+        </form>
+    </section>
 </body>
 </html>
