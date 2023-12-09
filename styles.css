@@ -1,34 +1,62 @@
-/* Загальні стилі */
+/* Стилі для заголовка та навігаційного меню */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px; /* Додано відступи навколо заголовка */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Додано відступи між пунктами меню */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Основні стилі для body та заголовків */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
 }
 
-section {
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    width: 600px;
-    max-width: 100%;
-    height: 500px;
-    overflow-y: auto;
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+/* Стилі для форми */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto; /* Додано вертикальну прокрутку */
+    overflow-x: hidden; /* Приховати горизонтальну кнопку прокрутки */
+    border: 1px solid #ccc;
+    margin: 20px;
 }
 
 .form-group {
@@ -36,9 +64,12 @@ form {
 }
 
 label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
+/* Закруглені поля вводу */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -48,23 +79,24 @@ input[type="submit"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
+    border-radius: 10px; /* Закруглені кути */
 }
 
 select {
     height: 35px;
 }
 
+/* Оранжева кнопка зеленого кольору при наведенні */
 input[type="submit"] {
-    background-color: #008000;
+    background-color: #FFA500; /* Оранжевий колір */
     color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-    background-color: #006400;
+    background-color: #008000; /* Зелений колір при наведенні */
 }
