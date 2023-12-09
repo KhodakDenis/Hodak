@@ -95,11 +95,6 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-section {
-    /* інші стилі секції */
-    overflow-y: hidden; /* Приховати кнопку прокрутки */
-}
-
 
 section {
     /* інші стилі секції */
