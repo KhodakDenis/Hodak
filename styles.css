@@ -101,6 +101,8 @@ section {
 }
 
 
-input[type="submit"]:hover {
-    background-color: #008000; /* Зелений колір при наведенні */
+section {
+    /* інші стилі секції */
+    overflow-x: hidden; /* Приховати горизонтальну кнопку прокрутки */
 }
+
