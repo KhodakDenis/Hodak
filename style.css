@@ -137,4 +137,20 @@ footer a:hover {
 .social-link:hover, .button-link:hover {
     background-color: #ffd700; /* Change to your desired hover color */
 }
+/* ... (Your existing CSS code) ... */
+
+#practicals li a, #labs li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#practicals li a:hover, #labs li a:hover {
+    background-color: #ffd700; /* Change to your desired hover color */
+}
 
